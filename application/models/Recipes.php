@@ -11,15 +11,27 @@ class Recipes extends CI_Model {
 
 	// The data comes from http://www.quotery.com/top-100-funny-quotes-of-all-time/?PageSpeed=noscript
 	var $data = array(
-            array('id' => '1', 'menu' => 'Green Tea', 'item' => 'Tea Powder', 'Quantity' => '1'),
-            array('id' => '2', 'menu' => 'Green Tea', 'item' => 'Water', 'Quantity' => '5'),
-            array('id' => '3', 'menu' => 'Green Tea', 'item' => 'Honney', 'Quantity' => '1'),
-            array('id' => '4', 'menu' => 'Black Coffee', 'item' => 'Coffee puree','Quantity' => '2'),
-            array('id' => '5', 'menu' => 'Black Coffee', 'item' => 'water', 'Quantity' => '3'),
-            array('id' => '6', 'menu' => 'Coffee', 'item' => 'Coffee puree', 'Quantity' => '1'),
-            array('id' => '7', 'menu' => 'Coffee', 'item' => 'Water', 'Quantity' => '2'),
-            array('id' => '8', 'menu' => 'Coffee', 'item' => 'Milk', 'Quantity' => '2'),
-            array('id' => '9', 'menu' => 'Coffee', 'item' => 'Sugar', 'Quantity' => '2')
+            array('id' => '1', 'menu' => 'Caramel Macchiato', 'item' => 'Milk', 'Quantity' => '2'),
+            array('id' => '2', 'menu' => 'Caramel Macchiato', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
+            array('id' => '3', 'menu' => 'Cappuccino', 'item' => 'Milk', 'Quantity' => '3'),
+            array('id' => '4', 'menu' => 'Cappuccino', 'item' => 'Brewed Espresso','Quantity' => '1'),
+            array('id' => '5', 'menu' => 'Caramel Macchiato', 'item' => 'Vanilla Syrup', 'Quantity' => '1'),
+            array('id' => '6', 'menu' => 'Caramel Macchiato', 'item' => 'Caramel Sauce', 'Quantity' => '1'),
+            array('id' => '7', 'menu' => 'Latte', 'item' => 'Milk', 'Quantity' => '1'),
+            array('id' => '8', 'menu' => 'Latte', 'item' => 'Brewed Espresso', 'Quantity' => '2'),
+            array('id' => '9', 'menu' => 'Mocha', 'item' => 'Whipped Cream', 'Quantity' => '1'),
+            array('id' => '10', 'menu' => 'Mocha', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
+            array('id' => '11', 'menu' => 'Mocha', 'item' => 'Mocha Sauce', 'Quantity' => '1'),
+            array('id' => '12', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Milk', 'Quantity' => '1'),
+            array('id' => '13', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Pumpkin Spice Sauce', 'Quantity' => '1'),
+            array('id' => '14', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
+            array('id' => '15', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Whipped Cream', 'Quantity' => '1'),
+            array('id' => '16', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Pumpkin Spice Topping', 'Quantity' => '1'),
+            array('id' => '17', 'menu' => 'White Chocolate Mocha', 'item' => 'Milk', 'Quantity' => '1'),
+            array('id' => '18', 'menu' => 'White Chocolate Mocha', 'item' => 'White Chocolate Mocha Sauce', 'Quantity' => '1'),
+            array('id' => '19', 'menu' => 'White Chocolate Mocha', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
+            array('id' => '20', 'menu' => 'White Chocolate Mocha', 'item' => 'Whipped Cream', 'Quantity' => '1')
+            
 	);
 
 	// Constructor
