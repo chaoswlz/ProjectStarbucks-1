@@ -1,4 +1,4 @@
-<div class="row">
+<div>
     <h1>Recipe Menu</h1>
     <div>
     {names}
