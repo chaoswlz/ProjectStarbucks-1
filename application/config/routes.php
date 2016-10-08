@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['menu'] = 'menu/welcome/index';
 $route['menu/(:any)'] = 'menu/find/index/$1';
+$route['inventory'] = 'inventory/welcome/index';
