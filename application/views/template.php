@@ -29,9 +29,9 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="/">Home</a></li>
-                        <li><a href="menu">Menu</a></li>
-                        <li><a href="inventory">Inventory</a></li>
-                        <li><a href="#">Recipe</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/inventory">Inventory</a></li>
+                        <li><a href="/recipe">Recipe</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
