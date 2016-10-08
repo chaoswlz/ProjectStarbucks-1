@@ -1,6 +1,6 @@
 <h1>{name}</h1>
     
-<div class="row">
+<div>
     <table style="width:100%">
   <tr>
     <th>Item</th> 
