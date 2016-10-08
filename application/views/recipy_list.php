@@ -1,8 +1,8 @@
 <div class="row">
-    <h1>Menu</h1>
+    <h1>Recipe Menu</h1>
     <div>
     {names}
-        <a href="recipe/{id}">{name}</a>
+        <p><a href="recipe/{id}">{name}</a></p>
     {/names}
     </div>
    
