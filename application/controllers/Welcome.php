@@ -22,5 +22,23 @@ class Welcome extends Application
 		$this->data['pagebody'] = 'welcome_message';
 		$this->render(); 
 	}
+        
+        function counte($goods){
+            $this->load->model('recipes');
+            $this->load->model('inventories');
 
+            foreach($this->recipes->all() as $detail){
+                if($detail['menu'] == $goods){
+                    foreach ($this->inventories->all() as $item) {
+                        if($item['name'] == $detail['item']){
+                            $all = intval($item['quantity']);
+                            $each = intval($detail['quantity']);
+                            $rest = $all % $each;
+                            $counter[] = ($all - $rest)/ $each;
+                        }
+                    }   
+                }
+            }    
+            return min($counter);   
+    }
 }
