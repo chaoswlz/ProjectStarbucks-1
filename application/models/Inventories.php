@@ -6,7 +6,7 @@
 class Inventories extends CI_Model {
     // ingredents data
     var $data = array(
-        array('id' => '1', 'name' => 'Mike', 'quantity' => '1000'),
+        array('id' => '1', 'name' => 'Milk', 'quantity' => '1000'),
         array('id' => '2', 'name' => 'Ice', 'quantity' => '1000'),
         array('id' => '3', 'name' => 'Sugar', 'quantity' => '1000'),
         array('id' => '4', 'name' => 'Water', 'quantity' => '1000'),
