@@ -19,10 +19,37 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
-		$this->data['pagebody'] = 'welcome_message';
-		$this->render(); 
+            // load models
+            $this->load->model('recipes');
+            $this->load->model('inventories');
+            $this->load->model('menus');
+            
+            $this->data['pagebody'] = 'welcome_message';
+            
+            $menu = $this->menus->all();
+            $count_menu = 0;
+            foreach($menu as $m){
+                $count_menu++;
+            }
+            
+            $recipes = $this->recipes->all();
+            $count_recipes = 0;
+            foreach($recipes as $r){
+                $count_recipes++;
+            }
+            
+            
+            $this->data['menu_counts'] = $count_menu;
+            $this->data['recipe_counts'] = $count_recipes;
+            $this->render(); 
 	}
         
+        
+        
+        
+        
+        
+        // this is used for testing purpose
         public function counte($goods){
             $this->load->model('recipes');
             $this->load->model('inventories');
