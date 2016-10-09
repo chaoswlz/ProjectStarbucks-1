@@ -30,7 +30,7 @@
                             <li class="active"><a href="/">Home</a></li>
                             <li><a href="/menu">Menu</a></li>
                             <li><a href="/inventory">Inventory</a></li>
-                            <li><a href="/recipe">Recipe</a></li>w
+                            <li><a href="/recipe">Recipe</a></li>
                         </ul><!-- end nav -->
                         <form class="navbar-form pull-left">
                             <input type="text" class="form-control" id="searchInput" placeholder="Search this site...">
@@ -77,7 +77,6 @@
                     <div class="col-sm-2">
                         <h6>Coded with<span class="glyphicon glyphicon-heart"></span></h6>
                         <p>BCIT COMP4711 Starbucks Project</p>
-                        
                     </div><!-- end col-sm-2 -->
                 </div><!-- end row -->
             </div><!-- end container -->
