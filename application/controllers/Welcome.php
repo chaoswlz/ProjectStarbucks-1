@@ -23,22 +23,28 @@ class Welcome extends Application
 		$this->render(); 
 	}
         
-        function counte($goods){
+        public function counte($goods){
             $this->load->model('recipes');
             $this->load->model('inventories');
-
+            $counter = array();
+            
             foreach($this->recipes->all() as $detail){
                 if($detail['menu'] == $goods){
                     foreach ($this->inventories->all() as $item) {
                         if($item['name'] == $detail['item']){
                             $all = intval($item['quantity']);
-                            $each = intval($detail['quantity']);
+                            $each = intval($detail['Quantity']);
                             $rest = $all % $each;
                             $counter[] = ($all - $rest)/ $each;
                         }
-                    }   
+                    }  
+                    
                 }
-            }    
-            return min($counter);   
-    }
+            }
+            $this->data['pagebody'] = 'test';
+            $this->data['rest'] = min($counter);   
+            $this->render();
+        }
+        
+        
 }
