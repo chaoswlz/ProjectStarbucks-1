@@ -28,7 +28,7 @@ class Welcome extends Application
         
         // build an array of formatted cells for them
         foreach($source as $cell){
-            $ingreds[] = array('name' => $cell['name'], 'quantity' => $cell['quantity']);
+            $ingreds[] = array('id' => $cell['id'], 'name' => $cell['name'], 'quantity' => $cell['quantity']);
         }
         
         $this->data['ingreds'] = $ingreds;
