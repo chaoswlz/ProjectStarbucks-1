@@ -28,8 +28,11 @@ class Welcome extends Application
             $this->load->model('inventories');
             $counter = array();
             
+            $target = preg_replace("/[\s-&]/", "", $goods);
+            
             foreach($this->recipes->all() as $detail){
-                if($detail['menu'] == $goods){
+                $orgin = preg_replace("/[\s&-]/", "", $detail['menu']);
+                if($orgin == $target){
                     foreach ($this->inventories->all() as $item) {
                         if($item['name'] == $detail['item']){
                             $all = intval($item['quantity']);
