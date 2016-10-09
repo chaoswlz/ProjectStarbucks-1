@@ -24,8 +24,6 @@ class Welcome extends Application
         // get the all the ingredents from out model
         $source = $this->inventories->all();
         
-        // prime the table class
-        $this->load->library('table');
         $ingreds = array();
         
         // build an array of formatted cells for them
