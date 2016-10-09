@@ -56,3 +56,4 @@ $route['menu'] = 'menu/welcome/index';
 $route['menu/(:any)'] = 'menu/find/index/$1';
 $route['inventory'] = 'inventory/welcome/index';
 $route['recipe/(:num)'] = 'recipe/detail/detail/$1';
+$route['test/(:any)'] = 'welcome/counte/$1';
