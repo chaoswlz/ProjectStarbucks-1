@@ -15,9 +15,9 @@ class Recipes extends CI_Model {
             array('id' => '6', 'menu' => 'Caramel Macchiato', 'item' => 'Caramel Sauce', 'Quantity' => '1'),
             array('id' => '7', 'menu' => 'Latte', 'item' => 'Milk', 'Quantity' => '1'),
             array('id' => '8', 'menu' => 'Latte', 'item' => 'Brewed Espresso', 'Quantity' => '2'),
-            array('id' => '9', 'menu' => 'Caffè Mocha', 'item' => 'Whipped Cream', 'Quantity' => '1'),
-            array('id' => '10', 'menu' => 'Caffè Mocha', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
-            array('id' => '11', 'menu' => 'Caffè Mocha', 'item' => 'Mocha Sauce', 'Quantity' => '1'),
+            array('id' => '9', 'menu' => 'Caffe Mocha', 'item' => 'Whipped Cream', 'Quantity' => '1'),
+            array('id' => '10', 'menu' => 'Caffe Mocha', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
+            array('id' => '11', 'menu' => 'Caffe Mocha', 'item' => 'Mocha Sauce', 'Quantity' => '1'),
             array('id' => '12', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Milk', 'Quantity' => '1'),
             array('id' => '13', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Pumpkin Spice Sauce', 'Quantity' => '1'),
             array('id' => '14', 'menu' => 'Pumpkin Spice Latte', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
@@ -27,7 +27,7 @@ class Recipes extends CI_Model {
             array('id' => '18', 'menu' => 'White Chocolate Mocha', 'item' => 'White Chocolate Mocha Sauce', 'Quantity' => '1'),
             array('id' => '19', 'menu' => 'White Chocolate Mocha', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
             array('id' => '20', 'menu' => 'White Chocolate Mocha', 'item' => 'Whipped Cream', 'Quantity' => '1'),
-            array('id' => '21', 'menu' => 'Caffè Mocha', 'item' => 'Milk', 'Quantity' => '1')
+            array('id' => '21', 'menu' => 'Caffe Mocha', 'item' => 'Milk', 'Quantity' => '1')
             
 	);
 
