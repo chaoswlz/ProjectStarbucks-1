@@ -20,7 +20,7 @@ class Menus extends CI_Model{
             'price' => '3.99', 'href' => '/Cappuccino', 'img' => 'assets/images/cappuccino.jpg'),
         array('id' => '3', 'name' => 'Latte', 'type' => 'drink',
             'price' => '4.35', 'href' => '/Latte', 'img' => 'assets/images/'),
-        array('id' => '4', 'name' => 'Mocha', 'type' => 'drink',
+        array('id' => '4', 'name' => 'Caffè Mocha', 'type' => 'drink',
             'price' => '3.79', 'href' => '/Mocha', 'img' => 'assets/images/'),
         array('id' => '5', 'name' => 'Pumpkin Spice Latte', 'type' => 'drink',
             'price' => '4.99', 'href' => '/Pumpkin-Spice-Latte', 'img' => 'assets/images/'),
