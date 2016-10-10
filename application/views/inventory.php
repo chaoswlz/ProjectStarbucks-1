@@ -5,7 +5,7 @@
     <table class="table">
         <thead>
             <tr>
-              <th>ID</th>
+              <th>#</th>
               <th>Name</th>
               <th>Quantity</th>
             </tr>
@@ -14,7 +14,7 @@
             {ingreds}
                 <tr>
                     <td>{id}</td>
-                    <td><a href=''>{name}</a></td>
+                    <td><a href="inventory/{href}">{name}</a></td>
                     <td>{quantity}</td>
                 </tr>
             {/ingreds}
