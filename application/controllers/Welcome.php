@@ -67,14 +67,11 @@ class Welcome extends Application
                             $rest = $all % $each;
                             $counter[] = ($all - $rest)/ $each;
                         }
-                    }  
-                    
+                    }   
                 }
             }
             $this->data['pagebody'] = 'test';
             $this->data['rest'] = min($counter);   
             $this->render();
-        }
-        
-        
+        }  
 }

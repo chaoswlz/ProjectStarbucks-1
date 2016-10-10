@@ -1,15 +1,11 @@
 <?php
 
 /**
- * This is a "CMS" model for quotes, but with bogus hard-coded data,
- * so that we don't have to worry about any database setup.
- * This would be considered a "mock database" model.
  *
- * @author jim
+ * @author lizewu
  */
 class Recipes extends CI_Model {
 
-	// The data comes from http://www.quotery.com/top-100-funny-quotes-of-all-time/?PageSpeed=noscript
 	var $data = array(
             array('id' => '1', 'menu' => 'Caramel Macchiato', 'item' => 'Milk', 'Quantity' => '2'),
             array('id' => '2', 'menu' => 'Caramel Macchiato', 'item' => 'Brewed Espresso', 'Quantity' => '1'),
@@ -40,7 +36,7 @@ class Recipes extends CI_Model {
             parent::__construct();
 	}
 
-	// retrieve a single quote
+	// retrieve a single menu
 	public function get($which)
 	{
             // iterate over the data until we find the one we want
@@ -52,7 +48,7 @@ class Recipes extends CI_Model {
             return null;
 	}
 
-	// retrieve all of the quotes
+	// retrieve all of the menus
 	public function all()
 	{
             return $this->data;
@@ -90,8 +86,6 @@ class Recipes extends CI_Model {
                     $name[] = $record['menu'];
                 }
             }
-            
-            
             return $names;
 	}
   
