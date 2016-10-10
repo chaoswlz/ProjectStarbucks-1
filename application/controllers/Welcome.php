@@ -19,17 +19,47 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
-		$this->data['pagebody'] = 'welcome_message';
-		$this->render(); 
+            // load models
+            $this->load->model('recipes');
+            $this->load->model('inventories');
+            $this->load->model('menus');
+            
+            $this->data['pagebody'] = 'welcome_message';
+            
+            $menu = $this->menus->all();
+            $count_menu = 0;
+            foreach($menu as $m){
+                $count_menu++;
+            }
+            
+            $recipes = $this->recipes->all();
+            $count_recipes = 0;
+            foreach($recipes as $r){
+                $count_recipes++;
+            }
+            
+            
+            $this->data['menu_counts'] = $count_menu;
+            $this->data['recipe_counts'] = $count_recipes;
+            $this->render(); 
 	}
         
+        
+        
+        
+        
+        
+        // this is used for testing purpose
         public function counte($goods){
             $this->load->model('recipes');
             $this->load->model('inventories');
             $counter = array();
             
+            $target = preg_replace("/[\s-&]/", "", $goods);
+            
             foreach($this->recipes->all() as $detail){
-                if($detail['menu'] == $goods){
+                $orgin = preg_replace("/[\s&-]/", "", $detail['menu']);
+                if($orgin == $target){
                     foreach ($this->inventories->all() as $item) {
                         if($item['name'] == $detail['item']){
                             $all = intval($item['quantity']);
@@ -37,14 +67,11 @@ class Welcome extends Application
                             $rest = $all % $each;
                             $counter[] = ($all - $rest)/ $each;
                         }
-                    }  
-                    
+                    }   
                 }
             }
             $this->data['pagebody'] = 'test';
             $this->data['rest'] = min($counter);   
             $this->render();
-        }
-        
-        
+        }  
 }
